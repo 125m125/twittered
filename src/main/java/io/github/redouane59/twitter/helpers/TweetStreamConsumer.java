@@ -80,6 +80,7 @@ public class TweetStreamConsumer {
     String line;
     try {
       line = reader.readLine();
+      listener.receivedInput();
       if (line == null) {
         return false;
       }

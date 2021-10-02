@@ -24,4 +24,6 @@ public interface IAPIEventListener {
    */
   void onStreamEnded(Exception e);
 
+  default void receivedInput() {}
+
 }
